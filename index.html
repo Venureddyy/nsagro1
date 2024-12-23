@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS AGRO AGENCY</title>
+    <style>
+        /* General reset and styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        /* Header Section */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1px 30px;
+            background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+            z-index: 10;
+        }
+
+        header img {
+            /* Add your logo path in the src attribute below */
+            height: 50px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            color: white;
+            font-size: 18px;
+        }
+
+        header nav a:hover {
+            color: #00FF7F; /* Highlight on hover */
+        }
+
+        /* First Page - Background Video */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .hero-section video {
+            /* Add your video path in the src attribute below */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero-text p {
+            font-size: 24px;
+            font-style: italic;
+        }
+
+        /* Second Page - Slideshow */
+        .slideshow {
+            padding: 50px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .slideshow img {
+            /* Add your image paths in the src attributes */
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Third and Fourth Pages - Products and Services */
+        .grid {
+            padding: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .grid-item {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item img {
+            /* Add your product/service image paths in the src attributes */
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .grid-item h3 {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        .view-all {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .view-all a {
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        /* Contact Us Page */
+        .contact-section {
+            text-align: center;
+            padding: 100px;
+            background-color: #eef;
+        }
+
+        .contact-section button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-section button:hover {
+            background-color: #128C7E;
+        }
+
+        /* About Us Page */
+        .about-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .about-section iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .about-section a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="agro.png" alt="NS AGRO AGENCY Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About Us</a>
+        </nav>
+    </header>
+
+    <!-- First Page -->
+    <section class="hero-section" id="home">
+        <video src="background.mp4" autoplay muted loop></video>
+        <div class="hero-text">
+            <h1>NS AGRO AGENCY</h1>
+            <p>Your Trusted Agriculture Machinery Partner</p>
+        </div>
+    </section>
+
+    <!-- Second Page -->
+    <section id="products">
+        <div class="slideshow">
+            <img src="Products\image1.jpg" alt="Product 1">
+            <img src="Products\image2.jpg" alt="Product 2">
+            <img src="Products\image3.jpg" alt="Product 3">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+
+    <!-- Third Page -->
+    <section>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="Products\image1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+            </div>
+            <div class="grid-item">
+                <img src="Products\image2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+            </div>
+            <div class="grid-item">
+                <img src="Products\image3.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+            </div>
+            <div class="grid-item">
+                <img src="Products\image4.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="#products">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Fourth Page -->
+    <section id="services">
+        <div class="grid">
+            <div class="grid-item">
+                <img src="path-to-service1.jpg" alt="Service 1">
+                <h3>Service 1</h3>
+            </div>
+            <div class="grid-item">
+                <img src="path-to-service2.jpg" alt="Service 2">
+                <h3>Service 2</h3>
+            </div>
+            <div class="grid-item">
+                <img src="path-to-service3.jpg" alt="Service 3">
+                <h3>Service 3</h3>
+            </div>
+            <div class="grid-item">
+                <img src="path-to-service4.jpg" alt="Service 4">
+                <h3>Service 4</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Page -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <button onclick="window.open('https://wa.me/9848098221')">Message on WhatsApp</button>
+    </section>
+
+    <!-- About Us Page -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>NS AGRO AGENCY, Nakrekal</p>
+        <iframe src="https://www.google.com/maps/embed?..."></iframe>
+    </section>
+</body>
+</html>
